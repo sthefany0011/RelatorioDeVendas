@@ -5,7 +5,11 @@ using System.Threading.Tasks;
 
 namespace SalesWebMvc.Services.Exception
 {
-    public class IntegrityException
+    public class IntegrityException : ApplicationException
     {
+        public IntegrityException(string message) : base(message)
+        {
+
+        }
     }
 }
